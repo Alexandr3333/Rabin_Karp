@@ -1,0 +1,41 @@
+\doxysection{Rabin\+\_\+\+Karp.\+h}
+\hypertarget{_rabin___karp_8h_source}{}\label{_rabin___karp_8h_source}\index{проекты/Rabin\_Karp\_Curs/Rabin\_Karp\_Curs/Rabin\_Karp.h@{проекты/Rabin\_Karp\_Curs/Rabin\_Karp\_Curs/Rabin\_Karp.h}}
+\mbox{\hyperlink{_rabin___karp_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <regex>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <algorithm>}\ \textcolor{comment}{//\ ���\ std::transform}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_file_handler}{FileHandler}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ \mbox{\hyperlink{class_file_handler_a297003006f29f0cf9c2aca2d462625be}{readFile}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_handler_aed70cdc9ccc3b539ebac90d863ab00a1}{writeFile}}(\textcolor{keyword}{const}\ std::string\&\ filename,\ \textcolor{keyword}{const}\ std::string\&\ content);}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_string_searcher}{StringSearcher}}\ \{}
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00049\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{class_string_searcher_aad1a780a8d11dd226fde12395c8d454e}{rabinKarpSearch}}(\textcolor{keyword}{const}\ std::string\&\ text,\ \textcolor{keyword}{const}\ std::string\&\ pattern,\ \textcolor{keywordtype}{int}\ d,\ \textcolor{keywordtype}{int}\ prime)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00059\ \ \ \ \ std::string\ \mbox{\hyperlink{class_string_searcher_a6a3c9ae43c13490d75b33a8257b252a4}{getMatchesWithContext}}(\textcolor{keyword}{const}\ std::string\&\ text,\ \textcolor{keyword}{const}\ std::vector<int>\&\ matches,\ \textcolor{keyword}{const}\ std::string\&\ pattern,\ \textcolor{keywordtype}{int}\ contextSize)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_app}{MainApp}}\ \{}
+\DoxyCodeLine{00067\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{bool}\ isValidUTF8(\textcolor{keyword}{const}\ std::string\&\ str)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ \ \ \ \ std::string\ toLower(\textcolor{keyword}{const}\ std::string\&\ str)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_app_aafd32fdbadfcc61fdf8cdd0c18dd2eb3}{run}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}*\ argv[]);}
+\DoxyCodeLine{00089\ \};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ }
+
+\end{DoxyCode}

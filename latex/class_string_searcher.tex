@@ -1,0 +1,78 @@
+\doxysection{String\+Searcher Class Reference}
+\hypertarget{class_string_searcher}{}\label{class_string_searcher}\index{StringSearcher@{StringSearcher}}
+
+
+Класс для выполнения поиска подстрок в тексте с использованием алгоритма Рабина-\/Карпа.  
+
+
+
+
+{\ttfamily \#include $<$Rabin\+\_\+\+Karp.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_string_searcher_aad1a780a8d11dd226fde12395c8d454e}{rabin\+Karp\+Search}} (const std\+::string \&text, const std\+::string \&pattern, int d, int prime) const
+\begin{DoxyCompactList}\small\item\em Выполняет поиск подстрок с использованием алгоритма Рабина-\/Карпа. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_string_searcher_a6a3c9ae43c13490d75b33a8257b252a4}{get\+Matches\+With\+Context}} (const std\+::string \&text, const std\+::vector$<$ int $>$ \&matches, const std\+::string \&pattern, int context\+Size) const
+\begin{DoxyCompactList}\small\item\em Получает контекст найденных совпадений в тексте. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для выполнения поиска подстрок в тексте с использованием алгоритма Рабина-\/Карпа. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_string_searcher_a6a3c9ae43c13490d75b33a8257b252a4}\index{StringSearcher@{StringSearcher}!getMatchesWithContext@{getMatchesWithContext}}
+\index{getMatchesWithContext@{getMatchesWithContext}!StringSearcher@{StringSearcher}}
+\doxysubsubsection{\texorpdfstring{getMatchesWithContext()}{getMatchesWithContext()}}
+{\footnotesize\ttfamily \label{class_string_searcher_a6a3c9ae43c13490d75b33a8257b252a4} 
+std\+::string String\+Searcher\+::get\+Matches\+With\+Context (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text}{, }\item[{const std\+::vector$<$ int $>$ \&}]{matches}{, }\item[{const std\+::string \&}]{pattern}{, }\item[{int}]{context\+Size}{}\end{DoxyParamCaption}) const}
+
+
+
+Получает контекст найденных совпадений в тексте. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Текст для поиска. \\
+\hline
+{\em matches} & Вектор позиций найденных совпадений. \\
+\hline
+{\em pattern} & Шаблон для поиска. \\
+\hline
+{\em context\+Size} & Размер контекста вокруг найденного совпадения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Строка с описанием найденных совпадений и контекста. 
+\end{DoxyReturn}
+\Hypertarget{class_string_searcher_aad1a780a8d11dd226fde12395c8d454e}\index{StringSearcher@{StringSearcher}!rabinKarpSearch@{rabinKarpSearch}}
+\index{rabinKarpSearch@{rabinKarpSearch}!StringSearcher@{StringSearcher}}
+\doxysubsubsection{\texorpdfstring{rabinKarpSearch()}{rabinKarpSearch()}}
+{\footnotesize\ttfamily \label{class_string_searcher_aad1a780a8d11dd226fde12395c8d454e} 
+std\+::vector$<$ int $>$ String\+Searcher\+::rabin\+Karp\+Search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text}{, }\item[{const std\+::string \&}]{pattern}{, }\item[{int}]{d}{, }\item[{int}]{prime}{}\end{DoxyParamCaption}) const}
+
+
+
+Выполняет поиск подстрок с использованием алгоритма Рабина-\/Карпа. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Текст для поиска. \\
+\hline
+{\em pattern} & Шаблон для поиска. \\
+\hline
+{\em d} & Основание системы счисления. \\
+\hline
+{\em prime} & Простое число для модуляции. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Вектор позиций найденных совпадений. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+РїСЂРѕРµРєС‚С‹/\+Rabin\+\_\+\+Karp\+\_\+\+Curs/\+Rabin\+\_\+\+Karp\+\_\+\+Curs/\mbox{\hyperlink{_rabin___karp_8h}{Rabin\+\_\+\+Karp.\+h}}\item 
+РїСЂРѕРµРєС‚С‹/\+Rabin\+\_\+\+Karp\+\_\+\+Curs/\+Rabin\+\_\+\+Karp\+\_\+\+Curs/Rabin\+\_\+\+Karp.\+cpp\end{DoxyCompactItemize}

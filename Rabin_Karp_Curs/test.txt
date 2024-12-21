@@ -1,0 +1,8 @@
+Apple  Apricot  Avocado
+Banana  CocONut  Fig
+Kiwi  LemOn  Lime
+Mango  Nectarine  Orange
+Papaya  Passion  fruit Peach
+Pear  Pineapple  Plum
+Quince  Star fruit  Grapefruit
+Pomegranate  PersimmoN  Tangerine
