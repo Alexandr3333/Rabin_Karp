@@ -48,7 +48,7 @@ public:
      * @param prime A prime number for modulation.
      * @return A vector of positions of found matches.
      */
-    std::vector<int> rabinKarpSearch(const std::string& text, const std::string& pattern, int d, int prime) const;
+    std::vector<int> rabinKarpSearch(const std::string& text, const std::string& pattern, int hash_base, int modulus) const;
 
     /**
      * @brief Gets the context of found matches in the text.

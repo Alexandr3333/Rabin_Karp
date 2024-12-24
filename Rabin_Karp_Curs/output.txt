@@ -1,8 +1,8 @@
-Найдено совпадение: "oN" в позиции 34
-Контекст:  CocONut  
-Найдено совпадение: "oN" в позиции 52
-Контекст:  LemOn  Li
-Найдено совпадение: "oN" в позиции 97
-Контекст: assion  fr
-Найдено совпадение: "oN" в позиции 183
-Контекст: simmoN  Ta
+A match was found: "on" in the position 34
+Context:  CocONut  
+A match was found: "on" in the position 52
+Context:  LemOn  Li
+A match was found: "on" in the position 97
+Context: assion  fr
+A match was found: "on" in the position 183
+Context: simmoN  Ta
